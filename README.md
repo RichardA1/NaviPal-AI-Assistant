@@ -43,6 +43,13 @@ Here is the pin mapping table:
 | 3v3 --> VDD         | 3v3 --> Vin    | Vin  --> (5v)Vin   |               |             |
 | GND --> GND & L/R   | GND --> Gnd    | GND --> GND        | GND           | GND --> GND |
 
+## 3D Print files:
+
+Here are all the 3D print files.
+* [NaviPal (main body).stl](/STL%20Files/NaviPal%20(main%20body).stl)
+* [NaviPal (face).stl](/STL%20Files/NaviPal%20(face).stl)
+* [NaviPal (LED plate).stl](/STL%20Files/NaviPal%20(LED%20plate).stl)
+* [NaviPal (LED diffuser).stl](/STL%20Files/NaviPal%20(LED%20diffuser).stl)
 
 Push Text-to-speach (TTS) to the speaker:
 Here is an axsample fo the YAML code for simple text to speach:
