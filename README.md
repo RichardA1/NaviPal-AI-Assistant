@@ -1,12 +1,12 @@
 # Assistive-AI-Toy
-A toylike personal voice assistant for neurodiverse people.
+A toy-like personal voice assistant for neurodiverse individuals.
 
-This is ment to do medication reminders, appointments, checklists, tell stories, aid with theripy, and geniral check-ins. Basicaly this is ment to be a voice assistant companion for someone needing some help with reminders and encuragment. The idea started out as a tool for children, but many adults have expressed interest in having somthing similar.
+This device is designed to provide medication reminders, schedule appointments, manage checklists, tell stories, support therapy, and offer general check-ins. Essentially, it serves as a voice assistant companion for individuals who need help with reminders and encouragement. While the idea originally started as a tool for children, many adults have expressed interest in something similar.
 
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
-## The goal of this project:
-Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Speach-to-tex (STT) combined with a Large Langage Model (LLM). This should be capable of rinning on standard 3.3V rechargable battery tech and provide simple IO interactions like buttons, LEDs, haptic motors, and other sensors for aditional interactions.
+## Project Goal
+The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
 
 ## Prototype Parts List:
 
@@ -20,10 +20,10 @@ Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Sp
 * 1 x [3.7V 3000mAh Lithium Battery](https://www.amazon.com/dp/B0BG7ZTJSR)
 * 1 x [2 Pin Magnetic Connector (male)](https://www.amazon.com/dp/B0CSX6ZQ1H)
 * 1 x [2 Pin Magnetic USB Charging Cable](https://www.amazon.com/dp/B0BV2RF5N4)
-* Stranded wire for soldered connections. I recomend one of the following:
+* Stranded wire for soldered connections. I recommend one of the following:
   - [BNTECHGO 26 Gauge Silicone Wire Kit 10 Color Each 25 ft](https://www.amazon.com/dp/B09X452TKH)
   - [BNTECHGO 28 Gauge Silicone Ribbon Cable Flexible 6P Black 20 ft Flat Cable](https://www.amazon.com/dp/B099W67FNZ)
-    + *Note* the Ribbon cable will reduce the number of lose cables you have, but all cables will be black ecept for the one marked with a white stripe, typicaly indicating VCC, so this is only recomended for advanced users.
+    + *Note* the Ribbon cable will reduce the number of lose cables you have, but all cables will be black except for the one marked with a white stripe, typically indicating VCC, so this is only recommended for advanced users.
 * 3 x [6x3mm round Neodymium Magnets](https://www.amazon.com/dp/B0CCXLS8QM)
 * 1 x [Latching Mini ON/Off Switch](https://www.amazon.com/dp/B086L2GPGX)
 
@@ -32,8 +32,6 @@ Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Sp
 ![This is the wireing diagram for the electronics.](/Assistive%20AI%20Toy%20-%20ESP32-S3-N8R2.png)
 
 ### Pin Mapping:
-
-Important: You need to connect the 5v pads as shown in the diagram to enable 5v output on the 5v pin.
 
 Here is the pin mapping table:
 
