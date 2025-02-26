@@ -35,13 +35,13 @@ Important: You need to connect the 5v pads as shown in the diagram to enable 5v 
 
 Here is the pin mapping table:
 
-| INMP441 Microphone  | Speaker  | LED Strip WS2812B  | Input Switch  |
-| :---: | :---: | :---: | :---: |
-| GPIO 4 ---> SD | GPIO 8 ---> DIN | GPIO 9 ---> Din | GPIO 10 |
-| GPIO 3 ---> WS | GPIO 6 ---> LRC |  |  |
-| GPIO 2 ---> SCK | GPIO 7 ---> BLCK |  |  |
-| 3v3 ---> VDD | 3v3 ---> Vin | Vin  ---> (5v)Vin |  |
-| GND ---> GND & L/R | GND ---> Gnd | GND ---> GND | GND |
+| INMP441 Microphone  |     Speaker    | LED Strip WS2812B  | Input Switch  | Boost 1000  |
+|      :---:          |   :---:        |         :---:      |     :---:     |   :---:     |
+| GPIO 4 --> SD       | GPIO 8 --> DIN |   GPIO 9 --> Din   |    GPIO 10    | 5V --> 5V   |
+| GPIO 3 --> WS       | GPIO 6 --> LRC |                    |               |             |
+| GPIO 2 --> SCK      | GPIO 7 -> BLCK |                    |               |             |
+| 3v3 --> VDD         | 3v3 --> Vin    | Vin  --> (5v)Vin   |               |             |
+| GND --> GND & L/R   | GND --> Gnd    | GND --> GND        | GND           | GND --> GND |
 
 
 Push Text-to-speach (TTS) to the speaker:
