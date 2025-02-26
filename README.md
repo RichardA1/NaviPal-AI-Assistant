@@ -3,6 +3,8 @@ A toylike personal voice assistant for neurodiverse people.
 
 This is ment to do medication reminders, appointments, checklists, tell stories, aid with theripy, and geniral check-ins. Basicaly this is ment to be a voice assistant companion for someone needing some help with reminders and encuragment. The idea started out as a tool for children, but many adults have expressed interest in having somthing similar.
 
+[![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
+
 ## The goal of this project:
 Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Speach-to-tex (STT) combined with a Large Langage Model (LLM). This should be capable of rinning on standard 3.3V rechargable battery tech and provide simple IO interactions like buttons, LEDs, haptic motors, and other sensors for aditional interactions.
 
