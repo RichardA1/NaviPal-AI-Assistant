@@ -29,6 +29,21 @@ Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Sp
 
 ![This is the wireing diagram for the electronics.](/Assistive%20AI%20Toy%20-%20ESP32-S3-N8R2.png)
 
+### Pin Mapping:
+
+Important: You need to connect the 5v pads as shown in the diagram to enable 5v output on the 5v pin.
+
+Here is the pin mapping table:
+
+| INMP441 Microphone  | Speaker  | LED Strip WS2812B  | Input Switch  |
+| :---: | :---: | :---: | :---: |
+| GPIO 4 ---> SD | GPIO 8 ---> DIN | GPIO 9 ---> Din | GPIO 10 |
+| GPIO 3 ---> WS | GPIO 6 ---> LRC |  |  |
+| GPIO 2 ---> SCK | GPIO 7 ---> BLCK |  |  |
+| 3v3 ---> VDD | 3v3 ---> Vin | Vin  ---> (5v)Vin |  |
+| GND ---> GND & L/R | GND ---> Gnd | GND ---> GND | GND |
+
+
 Push Text-to-speach (TTS) to the speaker:
 Here is an axsample fo the YAML code for simple text to speach:
 ```yaml
