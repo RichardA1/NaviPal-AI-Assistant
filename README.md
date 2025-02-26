@@ -27,7 +27,7 @@ Design an inexpencive hardware platform that can use Text-to-speach (TTS) and Sp
 
 ## Wiering Diagram:
 
-
+![This is the wireing diagram for the electronics.](https://github.com/RichardA1/Assistive-AI-Toy/blob/main/Assistive%20AI%20Toy%20-%20ESP32-S3-N8R2.png?raw=true)
 
 Push Text-to-speach (TTS) to the speaker:
 Here is an axsample fo the YAML code for simple text to speach:
