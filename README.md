@@ -44,11 +44,11 @@ Make sure to join our community. we are recruiting robot builders, open source c
 Follow Richard on X: 
 Join us on Telegram:
 
-## About Richard Albritton
+## 🧠 About Richard Albritton
 
 I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory.
 
-## Roadmap
+## 👉 Roadmap
 
 * NaviPal v0 & demo
 * NaviPal Binance Launch <- We are here
