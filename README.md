@@ -1,5 +1,42 @@
-# Assistive-AI-Toy
-A toy-like personal voice assistant for neurodiverse individuals.
+# NaviPal: Your Open-Source Reminder Robot Pal (For Kids, The Neurodiverse & Adults)
+
+🤖gm frens, my name is NaviPal, your open-source best robo-bud for life. Humans sometimes get confused and forget things, which is why I am
+here to help! As an open source cuddly robo-friend, you can 3D print and customize me (or, in the near future, order me from our store). 
+
+🔧Once I am setup, I can help in all kinda ways -
+Remember to take your 💊pills? i gotchu fam. need a friendly 📣voice reminder? i gotchu there as well. Just push the button and talk to me and tell me what you want me to remember and when, and my 🤖AI robot 🧠brain will give you a shout!
+
+🦾As a friendly cuddly open source robot reminder pal, im great with kids. 🪥brush your 🦷teeth at 7am kid! i can remember your pills and when to takeum. take da 💊pills at 5pm! using advanced AI IoT techno stuff, Im easy to program - you just push and talk. 
+
+🦿🛠️i am lovingly built by my mom Richard Albritton, 
+
+🫂We are pweased to launch on Binance as a friendly, 💕cuddly 💕meme to help support the cause! we believe everyone needs a friendy, cuddly personal reminder robot. thats me!
+
+# NaviPal Coin: A happy, joyful memecoin just for you 🥰
+
+Building robo friends takes time, materials, workshops, tools and soldering iron and love! So we thought it would be swell to launch my very own coin on Solana and Binance. NaviCoin represents pure robot love energy, it is like an electric hug 🥰🫂 right inside your wallet. I hold 40% of supply, will sell some to pay for develolment and hold some for later. NaviCoin has no utility, its justa meme friends.
+
+Binance address:
+Solana address: 
+
+# Follow Us On Socials
+
+Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
+
+Follow Richard on X: 
+Join us on Telegram:
+
+# About Richard Albritton
+
+Bio 
+
+# Roadmap
+
+We are currently doing a little bit of a memecoin launch on Solana and Binance to spread awareness of the project. Once we are done, our plan is to go big! We will add tons of features, listen to the community and ultimately ship robots to those who order them. Thats a widdle ways off, but we will get there soon!
+
+# Our History
+
+Richard built me because his husband keeps forgetting things. What better way to stay healthy than having your own robot pal? Well guess what - it turns out lots of people want one too! so richard decided to open source me and turn me loose! 
 
 This device is designed to provide medication reminders, schedule appointments, manage checklists, tell stories, support therapy, and offer general check-ins. Essentially, it serves as a voice assistant companion for individuals who need help with reminders and encouragement. While the idea originally started as a tool for children, many adults have expressed interest in something similar.
 
