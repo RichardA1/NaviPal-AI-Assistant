@@ -1,4 +1,7 @@
+[![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
+
 # NaviPal: Your Open-Source Reminder Robot Pal (For Kids, The Neurodiverse & Adults)
+
 
 🤖gm frens, my name is NaviPal, your open-source best robo-bud for life. Humans sometimes get confused and forget things, which is why I am
 here to help! As an open source cuddly robo-friend, you can 3D print and customize me (or, in the near future, order me from our store). 
@@ -40,7 +43,7 @@ Richard built me because his husband keeps forgetting things. What better way to
 
 This device is designed to provide medication reminders, schedule appointments, manage checklists, tell stories, support therapy, and offer general check-ins. Essentially, it serves as a voice assistant companion for individuals who need help with reminders and encouragement. While the idea originally started as a tool for children, many adults have expressed interest in something similar.
 
-[![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
+
 
 ## Project Goal
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
