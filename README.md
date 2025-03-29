@@ -4,19 +4,19 @@
 
 Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching a couple memecoins simultaneously on Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
 
-I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory.
-
 If that sounds neat, keep reading. 
 
-## What are the benefits of a robot reminder pal?
+## Why you'll love NaviPal
 
-💊 Need to remember to take your pills? I got you covered
+💊 Never forget to take your meds again. NaviPal will remind you when it’s time.
 
-🕑 Have an appointment? I will remind you
+🕑 Appointments? I’ll make sure you’re always on schedule.
 
-📣 Program me with your voice. Press a button, tell me what you want me to remind you of (and when) and I will do so automatically with AI
+📣 Program me with your voice. Simply press a button, tell me what you need a reminder for (and when), and I’ll take care of the rest with my AI-powered system.
 
-🪥🦷 I can remind kids to brush their teeth at 8am and at 7pm, all with a push of a button
+🪥🦷 Parenting made easy. Set daily reminders for your kids to brush their teeth or complete tasks—no more forgotten routines!
+
+Programming NaviPal is as simple as speaking to it. With its on-board AI, I automatically figure out what to remind you about and when. It’s simple, affordable, and effective.
 
 You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
 
@@ -26,7 +26,11 @@ You can "program" NaviPal simply by pressing a button and speaking to it. On-boa
 
 🥰 Meet NaviCoin: A Meme for Robo-Friends
 
-Building robo friends takes time, materials, workshops, tools and soldering iron and love! So we thought it would be swell to launch my very own coin on Binance. NaviCoin represents pure robot love energy, it is like an electric hug 🥰🫂 right inside your wallet. We will hold 40% of supply, will sell 20% to pay for develolment and hold some for later. NaviCoin has no utility, its just a meme for friends.
+Creating robots takes time, materials, tools, and a lot of love! That’s why we’re launching NaviCoin on Binance. It represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet.
+
+We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. NaviCoin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!
+
+NaviCoin Binance Link: [Insert Binance link here]
 
 You can find NaviCoin below:
 
@@ -42,21 +46,21 @@ Join us on Telegram:
 
 # About Richard Albritton
 
-Bio 
+I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory.
 
 # Roadmap
 
-We are currently doing a little bit of a memecoin launch on Solana and Binance to spread awareness of the project. Once we are done, our plan is to go big! We will add tons of features, listen to the community and ultimately ship robots to those who order them. Thats a widdle ways off, but we will get there soon!
+* NaviPal v0 & demo
+* NaviPal Binance Launch <- We are here
+* NaviPal website, docs and socials
+* NaviPal v1 (More advanced)
+* Navipal v2 (Humanoid)
+* NaviPal robot sale (only for holders)
 
-# Our History
+Our ultimate vision is to build our very own happy open source robot factory. 
 
-Richard built me because his husband keeps forgetting things. What better way to stay healthy than having your own robot pal? Well guess what - it turns out lots of people want one too! so richard decided to open source me and turn me loose! 
+# Project Goal
 
-This device is designed to provide medication reminders, schedule appointments, manage checklists, tell stories, support therapy, and offer general check-ins. Essentially, it serves as a voice assistant companion for individuals who need help with reminders and encouragement. While the idea originally started as a tool for children, many adults have expressed interest in something similar.
-
-
-
-## Project Goal
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
 
 ## Prototype Parts List:
