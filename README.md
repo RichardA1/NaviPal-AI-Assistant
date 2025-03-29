@@ -1,6 +1,6 @@
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
-# NaviPal: Your Open-Source Reminder Robot Pal (For Kids, The Neurodiverse & Adults)
+# NaviPal: Open-Source Reminder Robot (For Kids, The Neurodiverse & Adults)
 
 
 🤖gm frens, my name is NaviPal, your open-source best robo-bud for life. Humans sometimes get confused and forget things, which is why I am
