@@ -61,6 +61,8 @@ Our ultimate vision is to build our very own happy open source robot factory.
 
 ## Project Goal
 
+<img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal-purple.jpg?raw=true" width="700"/>
+
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
 
 ## FAQ
