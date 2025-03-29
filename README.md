@@ -1,4 +1,4 @@
-# Assistive-AI-Toy
+# NaviPal Assistive AI Toy
 A toy-like personal voice assistant for neurodiverse individuals.
 
 This device is designed to provide medication reminders, schedule appointments, manage checklists, tell stories, support therapy, and offer general check-ins. Essentially, it serves as a voice assistant companion for individuals who need help with reminders and encouragement. While the idea originally started as a tool for children, many adults have expressed interest in something similar.
