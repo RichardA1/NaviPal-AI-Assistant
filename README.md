@@ -1,6 +1,4 @@
-[![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
-
-# NaviPal: Your Open-Source Reminder Robot Reminder Pal
+# 🤖 Meet NaviPal: Your Open-Source Reminder Robot Reminder Pal
 
 Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching memecoins simultaneously on Solana and Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
 
@@ -20,7 +18,13 @@ I built NaviPal to help my husband remember to take her pills. It worked so well
 
 You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
 
-# 🥰 Meet NaviCoin: A Meme for Robo-Friends
+# Watch The Demo
+
+[![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
+
+Take a moment to watch me walk through a demo of how NaviPal works. 
+
+ 🥰 Meet NaviCoin: A Meme for Robo-Friends
 
 
 
