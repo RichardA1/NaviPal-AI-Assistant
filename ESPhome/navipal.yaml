@@ -7,7 +7,8 @@ esphome:
     - light.turn_on:
         id: led
         blue: 100%
-        brightness: 60%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: fast pulse
 
 esp32:
@@ -25,11 +26,11 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "your-key"
+    key: !secret navipal_key
 
 ota:
   - platform: esphome
-    password: "yourpasswd"
+    password: !secret navipal_ota_pw
 
 wifi:
   networks:
@@ -41,12 +42,33 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "navipals-box"
-    password: "yourpasswd"
+    ssid: "NaviPal"
+    password: !secret navipal_ap_pw
 
 captive_portal:
 
 improv_serial:
+
+number:
+  - platform: template
+    name: "LED brightness"
+    optimistic: true
+    min_value: 10
+    max_value: 100
+    step: 1
+    id: led_brightness
+    restore_value: True
+
+text_sensor:
+  - platform: template
+    name: Recived Text
+    id: stt
+  - platform: template
+    name: Responce Text
+    id: tts
+  - platform: template
+    name: Brite
+    id: brit
 
  # Audio and Voice Assistant Config          
 i2s_audio:
@@ -77,6 +99,8 @@ voice_assistant:
         blue: 100%
         red: 0%
         green: 0%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: none
   on_listening: 
     - light.turn_on:
@@ -84,25 +108,39 @@ voice_assistant:
         blue: 0%
         red: 0%
         green: 50%
-        effect: pulse
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
+        effect: Rainbow Effect With Custom Values
   on_intent_start:
     then:
       - media_player.toggle:
           id: media_out
+  on_stt_end: 
+    - text_sensor.template.publish:
+        id: stt
+        state: !lambda 'return x;'
   on_tts_start:
+    - text_sensor.template.publish:
+        id: tts
+        state: !lambda 'return x;'
     - light.turn_on:
         id: led
         blue: 75%
         red: 0%
         green: 100%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: pulse
   on_tts_end:
     - media_player.play_media: !lambda return x;
+
     - light.turn_on:
         id: led
         blue: 100%
         red: 50%
         green: 0%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: talking
   on_end:
     - delay: 1s
@@ -114,6 +152,8 @@ voice_assistant:
         blue: 100%
         red: 0%
         green: 0%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: none
   on_error:
     - light.turn_on:
@@ -121,6 +161,8 @@ voice_assistant:
         blue: 0%
         red: 100%
         green: 0%
+        brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
         effect: none
     - delay: 1s
     - light.turn_off: led
@@ -176,6 +218,8 @@ media_player:
           blue: 75%
           red: 100%
           green: 0%
+          brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
           effect: talking
     on_idle:
          - light.turn_on:
@@ -183,6 +227,8 @@ media_player:
             blue: 100%
             red: 0%
             green: 0%
+            brightness:  !lambda |-
+                      return 1*(id(led_brightness).state * 0.01);
             effect: none
 
 light:
@@ -209,4 +255,8 @@ light:
           transition_length: 0.2s
           update_interval: 0.2s
           min_brightness: 0%
-          #max_brightness: 20%
+          max_brightness: 25%
+      - addressable_rainbow:
+          name: Rainbow Effect With Custom Values
+          speed: 40
+          width: 50
