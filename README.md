@@ -1,10 +1,12 @@
-# 🤖 Meet NaviPal: The Reminder Robot For All
+# 🤖 Meet NaviPal: The Friendly Open-Source Reminder Robot 🤖
 
 <img src="https://github.com/rexsaurus/NaviPal/blob/main/D1AF2927-EC39-4FAE-AD07-F49C783F85D4.jpeg?raw=true" width="350"/>
 
-Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching a couple memecoins simultaneously on Solana and Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
+Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching a couple memecoins simultaneously on Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
 
-I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a product anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory. 
+I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory.
+
+If that sounds neat, keep reading. 
 
 ## What are the benefits of a robot reminder pal?
 
@@ -22,16 +24,14 @@ You can "program" NaviPal simply by pressing a button and speaking to it. On-boa
 
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
-Take a moment to watch me walk through a demo of how NaviPal works. 
+🥰 Meet NaviCoin: A Meme for Robo-Friends
 
- 🥰 Meet NaviCoin: A Meme for Robo-Friends
+Building robo friends takes time, materials, workshops, tools and soldering iron and love! So we thought it would be swell to launch my very own coin on Binance. NaviCoin represents pure robot love energy, it is like an electric hug 🥰🫂 right inside your wallet. We will hold 40% of supply, will sell 20% to pay for develolment and hold some for later. NaviCoin has no utility, its just a meme for friends.
 
-
-
-Building robo friends takes time, materials, workshops, tools and soldering iron and love! So we thought it would be swell to launch my very own coin on Solana and Binance. NaviCoin represents pure robot love energy, it is like an electric hug 🥰🫂 right inside your wallet. I hold 40% of supply, will sell some to pay for develolment and hold some for later. NaviCoin has no utility, its justa meme friends.
+You can find NaviCoin below:
 
 Binance address:
-Solana address: 
+Binance link: 
 
 # Follow Us On Socials
 
