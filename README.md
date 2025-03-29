@@ -1,3 +1,4 @@
+
 # 🤖 Meet NaviPal: The Friendly Open-Source Reminder Robot 
 
 <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true" width="700"/>
