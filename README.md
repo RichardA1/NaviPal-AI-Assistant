@@ -1,6 +1,6 @@
 # 🤖 Meet NaviPal: The Friendly Open-Source Reminder Robot 
 
-<img src="https://github.com/rexsaurus/NaviPal/blob/main/D1AF2927-EC39-4FAE-AD07-F49C783F85D4.jpeg?raw=true" width="350"/>
+<img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true" width="700"/>
 
 Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching a couple memecoins simultaneously on Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
 
