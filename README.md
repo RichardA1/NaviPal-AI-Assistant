@@ -1,4 +1,4 @@
-# 🤖 Meet NaviPal: The Friendly Open-Source Reminder Robot 🤖
+# 🤖 Meet NaviPal: The Friendly Open-Source Reminder Robot 
 
 <img src="https://github.com/rexsaurus/NaviPal/blob/main/D1AF2927-EC39-4FAE-AD07-F49C783F85D4.jpeg?raw=true" width="350"/>
 
@@ -20,11 +20,11 @@ Programming NaviPal is as simple as speaking to it. With its on-board AI, I auto
 
 You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
 
-# Watch The Demo
+## Watch The Demo
 
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
-🥰 Meet NaviCoin: A Meme for Robo-Friends
+## 🥰 Meet NaviCoin: A Meme for Robo-Friends
 
 Creating robots takes time, materials, tools, and a lot of love! That’s why we’re launching NaviCoin on Binance. It represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet.
 
@@ -37,18 +37,18 @@ You can find NaviCoin below:
 Binance address:
 Binance link: 
 
-# Follow Us On Socials
+## Follow Us On Socials
 
 Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
 
 Follow Richard on X: 
 Join us on Telegram:
 
-# About Richard Albritton
+## About Richard Albritton
 
 I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory.
 
-# Roadmap
+## Roadmap
 
 * NaviPal v0 & demo
 * NaviPal Binance Launch <- We are here
@@ -59,7 +59,7 @@ I built NaviPal to help my husband remember to take her pills. It worked so well
 
 Our ultimate vision is to build our very own happy open source robot factory. 
 
-# Project Goal
+## Project Goal
 
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
 
