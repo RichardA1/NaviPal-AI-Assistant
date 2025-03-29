@@ -6,7 +6,7 @@ Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, t
 
 If that sounds neat, keep reading. 
 
-## Why you'll love NaviPal
+## 🥰  Why you'll love NaviPal
 
 💊 Never forget to take your meds again. NaviPal will remind you when it’s time.
 
@@ -20,7 +20,7 @@ Programming NaviPal is as simple as speaking to it. With its on-board AI, I auto
 
 You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
 
-## Watch The Demo
+## 📢 Watch The Demo
 
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
@@ -37,7 +37,7 @@ You can find NaviCoin below:
 Binance address:
 Binance link: 
 
-## Follow Us On Socials
+## 🥰 Follow Us On Socials
 
 Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
 
