@@ -16,9 +16,9 @@ If that sounds neat, keep reading.
 
 🪥🦷 Parenting made easy. Set daily reminders for your kids to brush their teeth or complete tasks—no more forgotten routines!
 
-Programming NaviPal is as simple as speaking to it. With its on-board AI, I automatically figure out what to remind you about and when. It’s simple, affordable, and effective.
+## 🗣️ NaviPal is fun, simple and easy to use
 
-You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
+Using NaviPal for reminders take seconds. Press the button, tell NaviPal what you want to remember and on-board AI remembers. It's that simple. 
 
 ## 📢 Watch The Demo
 
@@ -37,7 +37,7 @@ You can find NaviCoin below:
 Binance address:
 Binance link: 
 
-## 🥰 Follow Us On Socials
+## 🐏 Follow Us On Socials
 
 Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
 
