@@ -30,18 +30,18 @@ Creating robots takes time, materials, tools, and a lot of love! That’s why we
 
 We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. NaviCoin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!
 
-NaviCoin Binance Link: [Insert Binance link here]
-NaviCoin Binance Contract address:
+▶️NaviCoin Binance Link: [Insert Binance link here]
+▶️NaviCoin Binance Contract address:
 
-Solana Link: [Insert Solana Link here] 
-NaviCoin Contract address: 
+▶️Solana Link: [Insert Solana Link here] 
+▶️NaviCoin Contract address: 
 
 ## 🐏 Follow Us On Socials
 
 Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
 
-Follow Richard on X: 
-Join us on Telegram:
+▶️ Follow Richard on X: 
+▶️ Join us on Telegram:
 
 ## 🧠 About Richard Albritton
 
@@ -59,17 +59,17 @@ I built NaviPal to help my husband remember to take her pills. It worked so well
 
 Our ultimate vision is to build our very own happy open source robot factory. 
 
-## Project Goal
+##👉 Project Goal
 
 <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal-purple.jpg?raw=true" width="700"/>
 
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
 
-## Useful Links
+## 👉Useful Links
 
 
 
-## FAQ
+## 👉FAQ
 
 * Why launch on both Solana and Binance at the same time? Why not pick one?
 Solana and Binance are two completely different communities. We believe NaviPal has appeal across the spectrum. We wanted to launch in both at once to maximize our community.
