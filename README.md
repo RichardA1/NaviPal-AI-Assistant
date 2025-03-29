@@ -74,15 +74,14 @@ The goal of this project is to design an inexpensive hardware platform that inte
 
 ## 👉FAQ
 
-* Why launch on both Solana and Binance at the same time? Why not pick one?
+### Why launch on both Solana and Binance at the same time? Why not pick one?
 Solana and Binance are two completely different communities. We believe NaviPal has appeal across the spectrum. We wanted to launch in both at once to maximize our community.
 
-* How do I buy a NaviPal?
+### How do I buy a NaviPal?
 NaviPal will be a platform which anyone can assemble at home. We aim to create a community around NaviPal to work together to further the project. Ultimately, we hope to make NaviPal available for sale and shipping, but need to evolve the platform. This is all in our roadmap.
 
-* How will the funds be used?
+### How will the funds be used?
 Funds will go towards design and manufacturing of the NaviPal. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the NaviPal project and platform, hire engineers and scale the platform.
 
-* Are you going to rug us?
-No, see the tokenomics above. 
-
+### How much will NaviPal cost?
+Less than $30, depends on a few things. We will know for sure closer to manufacturing time.
