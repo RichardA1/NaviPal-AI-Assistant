@@ -39,6 +39,8 @@ We’ll be holding 40% of the total supply, selling 20% to fund development, and
 
 ## 🐏 Follow Us On Socials
 
+<img src="https://github.com/rexsaurus/NaviPal/blob/main/output.gif?raw=true" width="700"/>
+
 Make sure to join our community. we are recruiting robot builders, open source contributors, software developers and designers. or if you just wanna hang out, thats fine too!
 
 ▶️ Follow Richard on X: 
