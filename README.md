@@ -59,7 +59,7 @@ I built NaviPal to help my husband remember to take her pills. It worked so well
 
 Our ultimate vision is to build our very own happy open source robot factory. 
 
-##👉 Project Goal
+## 👉Project Goal
 
 <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal-purple.jpg?raw=true" width="700"/>
 
