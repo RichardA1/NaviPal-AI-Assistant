@@ -26,16 +26,15 @@ Using NaviPal for reminders take seconds. Press the button, tell NaviPal what yo
 
 ## 🥰 Meet NaviCoin: A Meme for Robo-Friends
 
-Creating robots takes time, materials, tools, and a lot of love! That’s why we’re launching NaviCoin on Binance. It represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet.
+Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. INaviPal represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet.
 
 We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. NaviCoin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!
 
 NaviCoin Binance Link: [Insert Binance link here]
+NaviCoin Binance Contract address:
 
-You can find NaviCoin below:
-
-Binance address:
-Binance link: 
+Solana Link: [Insert Solana Link here] 
+NaviCoin Contract address: 
 
 ## 🐏 Follow Us On Socials
 
@@ -53,6 +52,7 @@ I built NaviPal to help my husband remember to take her pills. It worked so well
 * NaviPal v0 & demo
 * NaviPal Binance Launch <- We are here
 * NaviPal website, docs and socials
+* NaviPal Platform v1 (Whitepaper + Design)
 * NaviPal v1 (More advanced)
 * Navipal v2 (Humanoid)
 * NaviPal robot sale (only for holders)
@@ -62,6 +62,20 @@ Our ultimate vision is to build our very own happy open source robot factory.
 ## Project Goal
 
 The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.
+
+## FAQ
+
+* Why launch on both Solana and Binance at the same time? Why not pick one?
+Solana and Binance are two completely different communities. We believe NaviPal has appeal across the spectrum. We wanted to launch in both at once to maximize our community.
+
+* How do I buy a NaviPal?
+NaviPal will be a platform which anyone can assemble at home. We aim to create a community around NaviPal to work together to further the project. Ultimately, we hope to make NaviPal available for sale and shipping, but need to evolve the platform. This is all in our roadmap.
+
+* How will the funds be used?
+Funds will go towards design and manufacturing of the NaviPal. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the NaviPal project and platform, hire engineers and scale the platform.
+
+* Are you going to rug us?
+No, see the tokenomics above. 
 
 ## Prototype Parts List:
 
