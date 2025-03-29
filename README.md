@@ -1,21 +1,28 @@
 [![YouTube](http://i.ytimg.com/vi/SLpDSxgNKxc/hqdefault.jpg)](https://www.youtube.com/watch?v=SLpDSxgNKxc)
 
-# NaviPal: Open-Source Reminder Robot (For Kids, The Neurodiverse & Adults)
+# NaviPal: Your Open-Source Reminder Robot Reminder Pal
+
+Hello everyone, my name is Richard Albritton, inventor and creator of NaviPal, the friendly open-source, low-cost robot reminder pal. I am launching memecoins simultaneously on Solana and Binance to help fund the development of my vision: A simple, easy to use robot reminder friend for kids, neurodiverse adults and ... well ... everyone. 
+
+I built NaviPal to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a product anyone can use. My vision is to finance NaviPal via launching memecoins and to use the proceeds to build an open-source friendly robot factory. 
+
+## What are the benefits of a robot reminder pal?
+
+🤖gm frens, my name is NaviPal, your open-source robo-reminder pal. Humans forget things, I am here to help you remember. I am a low-cost, open source robot 🧠 to keep you on track. 
+
+💊 Need to remember to take your pills? I got you covered
+
+🕑 Have an appointment? I will remind you
+
+📣 Program me with your voice. Press a button, tell me what you want me to remind you of (and when) and I will do so automatically with AI
+
+🪥🦷 I can remind kids to brush their teeth at 8am and at 7pm, all with a push of a button
+
+You can "program" NaviPal simply by pressing a button and speaking to it. On-board AI will automatically figure out what to remember and remind you at the right time. It's simple, cheap and easy. 
+
+# 🥰 Meet NaviCoin: A Meme for Robo-Friends
 
 
-🤖gm frens, my name is NaviPal, your open-source best robo-bud for life. Humans sometimes get confused and forget things, which is why I am
-here to help! As an open source cuddly robo-friend, you can 3D print and customize me (or, in the near future, order me from our store). 
-
-🔧Once I am setup, I can help in all kinda ways -
-Remember to take your 💊pills? i gotchu fam. need a friendly 📣voice reminder? i gotchu there as well. Just push the button and talk to me and tell me what you want me to remember and when, and my 🤖AI robot 🧠brain will give you a shout!
-
-🦾As a friendly cuddly open source robot reminder pal, im great with kids. 🪥brush your 🦷teeth at 7am kid! i can remember your pills and when to takeum. take da 💊pills at 5pm! using advanced AI IoT techno stuff, Im easy to program - you just push and talk. 
-
-🦿🛠️i am lovingly built by my mom Richard Albritton, 
-
-🫂We are pweased to launch on Binance as a friendly, 💕cuddly 💕meme to help support the cause! we believe everyone needs a friendy, cuddly personal reminder robot. thats me!
-
-# NaviPal Coin: A happy, joyful memecoin just for you 🥰
 
 Building robo friends takes time, materials, workshops, tools and soldering iron and love! So we thought it would be swell to launch my very own coin on Solana and Binance. NaviCoin represents pure robot love energy, it is like an electric hug 🥰🫂 right inside your wallet. I hold 40% of supply, will sell some to pay for develolment and hold some for later. NaviCoin has no utility, its justa meme friends.
 
