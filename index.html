@@ -20,7 +20,7 @@
             scroll-behavior: smooth;
             background-color: var(--periwinkle);
             color: var(--black);
-            text-align: center;
+            text-align: left;
         }
         
         header {
@@ -31,13 +31,17 @@
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 20px;
         }
 
         header img {
             height: 40px;
+            margin-left: 20px;
+        }
+
+        nav {
+            margin-left: 20px;
         }
 
         nav a {
@@ -84,16 +88,29 @@
         h1, h2, h3 {
             color: var(--iris);
         }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        footer {
+            padding: 20px;
+            background: var(--periwinkle);
+            color: var(--iris);
+            text-align: center;
+            border-top: 1px solid var(--palatinate-blue);
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true" alt="BinBin Logo">
+        <img src="https://github.com/rexsaurus/Binbin/blob/main/logo.png?raw=true" alt="BinBin Logo">
         <nav>
             <a href="#about">About</a>
             <a href="#token">Token</a>
             <a href="#faq">FAQ</a>
             <a href="#roadmap">Roadmap</a>
+            <a href="#socials">Socials</a>
         </nav>
     </header>
 
@@ -115,8 +132,10 @@
         <p>▶️ BinBin Binance Contract address:</p>
         <p>▶️ Solana Link: [Insert Solana Link here]</p>
         <p>▶️ BinBin Contract address:</p>
-        
-        <h2>🐏 Follow Us On Socials</h2>
+    </section>
+
+    <section id="socials">
+        <h1>🐏 Socials</h1>
         <p>Make sure to join our community. We are recruiting robot builders, open source contributors, software developers and designers. Or if you just wanna hang out, that's fine too!</p>
         <p>▶️ Follow Richard on X:</p>
         <p>▶️ Join us on Telegram:</p>
@@ -129,7 +148,7 @@
 
     <section id="roadmap">
         <h1>👉 Roadmap</h1>
-        <ul style="list-style-position: inside;">
+        <ul>
             <li>BinBin v0 & demo</li>
             <li>BinBin Binance Launch <- We are here</li>
             <li>BinBin website, docs and socials</li>
@@ -158,5 +177,9 @@
         <h3>How much will BinBin cost?</h3>
         <p>Less than $30, depends on a few things. We will know for sure closer to manufacturing time.</p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 - BinBin - Made with Love by Richard Albritton</p>
+    </footer>
 </body>
 </html>
