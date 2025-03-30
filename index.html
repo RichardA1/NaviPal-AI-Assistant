@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BinBin - A Meme for Robo-Friends</title>
+    <title id="pageTitle">BinBin (宾宾) ($BNBN) the Robot</title>
     <style>
         :root {
             --black: #000000ff;
@@ -56,6 +56,9 @@
 
         nav {
             text-align: right;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         nav a {
@@ -67,6 +70,29 @@
 
         nav a:hover {
             color: var(--palatinate-blue-2);
+        }
+
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-toggle button {
+            background: var(--palatinate-blue);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .language-toggle button.active {
+            background: var(--iris);
+        }
+
+        .language-toggle button:hover {
+            background: var(--palatinate-blue-2);
         }
 
         .hero-carousel {
@@ -202,10 +228,7 @@
         }
 
         #google_translate_element {
-            position: fixed;
-            top: 80px;
-            right: 40px;
-            z-index: 1000;
+            display: none; /* Hide default Google Translate widget */
         }
 
         @media (max-width: 768px) {
@@ -217,14 +240,22 @@
                 left: 20px;
                 right: 20px;
                 padding: 0.5rem;
+                flex-direction: column;
+                align-items: flex-start;
             }
             
             body {
                 padding: 0 20px;
             }
             
+            nav {
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+            }
+            
             nav a {
-                margin: 0 10px;
+                margin: 5px 0;
             }
             
             header h1 {
@@ -253,9 +284,8 @@
                 flex: 1 1 100%;
             }
 
-            #google_translate_element {
-                top: 60px;
-                right: 20px;
+            .language-toggle {
+                margin-top: 10px;
             }
         }
     </style>
@@ -265,7 +295,7 @@
     <header>
         <div style="display: flex; align-items: center; gap: 10px;">
             <img src="https://github.com/rexsaurus/Binbin/blob/main/logo.png?raw=true" alt="BinBin Logo">
-            <h1><span>BinBin (宾宾)</span> ($BNBN) the Robot</h1>
+            <h1 id="headerTitle"><span>BinBin (宾宾)</span> ($BNBN) the Robot</h1>
         </div>
         <nav>
             <a href="#token">Token</a>
@@ -274,6 +304,10 @@
             <a href="#preorder">Pre-Order</a>
             <a href="#roadmap">Roadmap</a>
             <a href="#faq">FAQ</a>
+            <div class="language-toggle">
+                <button id="langEN" class="active">EN</button>
+                <button id="langCN">CN</button>
+            </div>
         </nav>
     </header>
 
@@ -397,16 +431,61 @@
             currentIndex = (currentIndex + 1) % slideCount;
             updateCarousel();
         });
+
+        // Language Toggle Logic
+        const langEN = document.getElementById('langEN');
+        const langCN = document.getElementById('langCN');
+        const pageTitle = document.getElementById('pageTitle');
+        const headerTitle = document.getElementById('headerTitle');
+
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                langEN.classList.add('active');
+                langCN.classList.remove('active');
+                pageTitle.textContent = 'BinBin (宾宾) ($BNBN) the Robot';
+                headerTitle.innerHTML = '<span>BinBin (宾宾)</span> ($BNBN) the Robot';
+                googleTranslate('en');
+            } else if (lang === 'cn') {
+                langEN.classList.remove('active');
+                langCN.classList.add('active');
+                pageTitle.textContent = '宾宾 ($BNBN) 机器人';
+                headerTitle.innerHTML = '<span>宾宾</span> ($BNBN) 机器人';
+                googleTranslate('zh-CN');
+            }
+        }
+
+        function googleTranslate(lang) {
+            const googleTranslateElement = document.getElementById('google_translate_element');
+            const select = googleTranslateElement.querySelector('select');
+            if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event('change'));
+            } else {
+                // Initialize Google Translate if not already loaded
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'zh-CN,en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+                setTimeout(() => googleTranslate(lang), 500); // Retry after initialization
+            }
+        }
+
+        langEN.addEventListener('click', () => setLanguage('en'));
+        langCN.addEventListener('click', () => setLanguage('cn'));
+
+        // Initial setup
+        setLanguage('en');
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: 'zh-CN,ko,ja,en',
+                includedLanguages: 'zh-CN,en',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
