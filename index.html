@@ -3,215 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BinBin ($BNBN) - The Friendly Open-Source Reminder Robot</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>BinBin - A Meme for Robo-Friends</title>
     <style>
-        * {
+        /* Basic CSS for layout */
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #E8F3E8; /* Soft pastel green background */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
             color: #333;
-            line-height: 1.6;
+        }
+
+        .hero {
+            height: 400px;
+            background: #f0f0f0;
+            /* Add your hero image styling here */
+        }
+
+        .button-container {
+            padding: 20px;
             text-align: center;
         }
 
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 24px;
-            font-weight: 500;
-            color: #ff69b4; /* Pink to match the "Pippin" logo color */
-        }
-
-        .logo-img {
-            width: 90px;
-            margin-right: 10px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        .nav-links li a:hover {
-            color: #ff69b4;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 50px 20px;
-        }
-
-        .hero-img {
-            width: 850px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-family: 'Quicksand', sans-serif;
-            font-size: 36px;
-            color: #2e8b57; /* Soft green to match the theme */
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #666;
-        }
-
-        /* Content Sections */
-        .content {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .content h2 {
-            font-family: 'Quicksand', sans-serif;
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #2e8b57;
-        }
-
-        .content p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .content ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .content ul li {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
+        .button-container a {
+            margin: 10px;
             padding: 10px 20px;
-            background-color: #ff69b4;
-            color: #fff;
+            background: #007bff;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
         }
 
-        .btn:hover {
-            background-color: #ff1493;
-        }
-
-        /* Socials Section */
-        .socials {
-            padding: 40px 20px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-links a {
-            text-decoration: none;
-            color: #1e90ff;
-            font-size: 16px;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            padding: 20px;
-            background-color: #fff;
-            border-top: 1px solid #ddd;
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        footer a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        section {
+            padding: 40px;
+            min-height: 400px;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="BinBin Logo" class="logo-img"> <!-- Placeholder for your logo -->
-            <span>BinBin ($BNBN) - The Friendly Open-Source Reminder Robot</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#buy">Buy $BNBN</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#socials">Socials</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#token">Token</a>
+            <a href="#faq">FAQ</a>
+            <a href="#roadmap">Roadmap</a>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true" alt="BinBin Robot" class="hero-img"> <!-- Placeholder for your robot character -->
-        <h1>Welcome to BinBin ($BNBN)</h1>
-        <p>The Friendly Open-Source Reminder Robot</p>
+    <div class="hero">
+        <!-- Hero image goes here -->
+    </div>
+
+    <div class="button-container">
+        <a href="#">Watch the Demo</a>
+        <a href="#">Buy $BNBN</a>
+        <a href="#">Pre-order BinBin</a>
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <section id="token">
+        <h1>Meet BinBin: A Meme for Robo-Friends</h1>
+        <p>Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. BinBin represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet.</p>
+        <p>We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. $BNBN coin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!</p>
+        
+        <p>▶️ BinBin Binance Link: [Insert Binance link here]</p>
+        <p>▶️ BinBin Binance Contract address:</p>
+        <p>▶️ Solana Link: [Insert Solana Link here]</p>
+        <p>▶️ BinBin Contract address:</p>
+        
+        <h2>🐏 Follow Us On Socials</h2>
+        <p>Make sure to join our community. We are recruiting robot builders, open source contributors, software developers and designers. Or if you just wanna hang out, that's fine too!</p>
+        <p>▶️ Follow Richard on X:</p>
+        <p>▶️ Join us on Telegram:</p>
     </section>
 
-    <!-- Meet BinBin Section -->
-    <section class="content">
-        <h2>🤖 Meet BinBin</h2>
-        <p>Hello everyone, my name is Richard Albritton, inventor and creator of BinBin, the friendly open-source, low-cost robot reminder pal. I am launching a couple memecoins simultaneously on Binance to help fund the development of my vision: A simple, easy-to-use robot reminder friend for kids, neurodiverse adults, and well… everyone.</p>
+    <section id="about">
+        <h1>🧠 About Richard Albritton</h1>
+        <p>I built BinBin to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance BinBin via launching memecoins and to use the proceeds to build an open-source friendly robot factory.</p>
+    </section>
 
-        <h2>🥰 Why you'll love BinBin</h2>
+    <section id="roadmap">
+        <h1>👉 Roadmap</h1>
         <ul>
-            <li>💊 Never forget to take your meds again.</li>
-            <li>🕑 Stay on top of your appointments.</li>
-            <li>📣 Program reminders with your voice.</li>
-            <li>🦷 Parenting made easy—set daily reminders for your kids.</li>
+            <li>BinBin v0 & demo</li>
+            <li>BinBin Binance Launch <- We are here</li>
+            <li>BinBin website, docs and socials</li>
+            <li>BinBin Platform v1 (Whitepaper + Design)</li>
+            <li>BinBin v1 (More advanced)</li>
+            <li>BinBin v2 (Humanoid)</li>
+            <li>BinBin robot sale (only for holders)</li>
         </ul>
-        <div class="cta-buttons">
-            <a href="https://www.youtube.com/watch?v=SLpDSxgNKxc" target="_blank" class="btn">Watch The Demo</a>
-            <a href="#buy" class="btn">Buy $BNBN
+        <p>Our ultimate vision is to build our very own happy open source robot factory.</p>
+        
+        <h2>👉 Project Goal</h2>
+        <p>The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.</p>
+    </section>
+
+    <section id="faq">
+        <h1>👉 FAQ</h1>
+        <h3>Why launch on both Solana and Binance at the same time? Why not pick one?</h3>
+        <p>Solana and Binance are two completely different communities. We believe BinBin has appeal across the spectrum. We wanted to launch in both at once to maximize our community.</p>
+        
+        <h3>How do I buy a BinBin?</h3>
+        <p>BinBin will be a platform which anyone can assemble at home. We aim to create a community around BinBin to work together to further the project. Ultimately, we hope to make BinBin available for sale and shipping, but need to evolve the platform. This is all in our roadmap.</p>
+        
+        <h3>How will the funds be used?</h3>
+        <p>Funds will go towards design and manufacturing of the BinBin. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the BinBin project and platform, hire engineers and scale the platform.</p>
+        
+        <h3>How much will BinBin cost?</h3>
+        <p>Less than $30, depends on a few things. We will know for sure closer to manufacturing time.</p>
+    </section>
+</body>
+</html>
