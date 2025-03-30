@@ -5,57 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BinBin - A Meme for Robo-Friends</title>
     <style>
-        /* Basic CSS for layout */
+        :root {
+            --black: #000000ff;
+            --palatinate-blue: #3C43DDff;
+            --periwinkle: #BEBAE7ff;
+            --iris: #5D44D2ff;
+            --palatinate-blue-2: #4E37CBff;
+        }
+
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             scroll-behavior: smooth;
+            background-color: var(--periwinkle);
+            color: var(--black);
+            text-align: center;
         }
         
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: #fff;
+            background: var(--periwinkle);
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        header img {
+            height: 40px;
         }
 
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: var(--iris);
+        }
+
+        nav a:hover {
+            color: var(--palatinate-blue-2);
         }
 
         .hero {
             height: 400px;
-            background: #f0f0f0;
-            /* Add your hero image styling here */
+            background: url('https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true') center/cover no-repeat;
+            margin-top: 70px;
         }
 
         .button-container {
             padding: 20px;
-            text-align: center;
+            background: var(--periwinkle);
         }
 
         .button-container a {
             margin: 10px;
             padding: 10px 20px;
-            background: #007bff;
+            background: var(--palatinate-blue);
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            display: inline-block;
+        }
+
+        .button-container a:hover {
+            background: var(--palatinate-blue-2);
         }
 
         section {
             padding: 40px;
             min-height: 400px;
+            background: var(--periwinkle);
+        }
+
+        h1, h2, h3 {
+            color: var(--iris);
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true" alt="BinBin Logo">
         <nav>
             <a href="#about">About</a>
             <a href="#token">Token</a>
@@ -64,12 +97,10 @@
         </nav>
     </header>
 
-    <div class="hero">
-        <!-- Hero image goes here -->
-    </div>
+    <div class="hero"></div>
 
     <div class="button-container">
-        <a href="#">Watch the Demo</a>
+        <a href="https://www.youtube.com/watch?v=SLpDSxgNKxc">Watch the Demo</a>
         <a href="#">Buy $BNBN</a>
         <a href="#">Pre-order BinBin</a>
         <a href="#faq">FAQ</a>
@@ -98,7 +129,7 @@
 
     <section id="roadmap">
         <h1>👉 Roadmap</h1>
-        <ul>
+        <ul style="list-style-position: inside;">
             <li>BinBin v0 & demo</li>
             <li>BinBin Binance Launch <- We are here</li>
             <li>BinBin website, docs and socials</li>
