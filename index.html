@@ -401,4 +401,85 @@
             </ul>
             <p data-en="Our ultimate vision is to build our very own happy open source robot factory." data-cn="我们的终极愿景是建立我们自己的快乐开源机器人工厂。">Our ultimate vision is to build our very own happy open source robot factory.</p>
             <h2 data-en="🤖 Project Goal" data-cn="🤖 项目目标">🤖 Project Goal</h2>
-            <p data-en="The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions." data-cn="这个项目的目标是设计一个廉价的硬件平台，整合文本转语音（TTS）和语音转文本（STT）与大型语言模型
+            <p data-en="The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions." data-cn="这个项目的目标是设计一个廉价的硬件平台，整合文本转语音（TTS）和语音转文本（STT）与大型语言模型（LLM）。该设备应使用标准的3.3V可充电电池运行，并支持简单的I/O交互，包括按钮、LED、触觉电机和其他传感器以增强交互体验。">The goal of this project is to design an inexpensive hardware platform that integrates Text-to-Speech (TTS) and Speech-to-Text (STT) with a Large Language Model (LLM). The device should run on a standard 3.3V rechargeable battery and support simple I/O interactions, including buttons, LEDs, haptic motors, and additional sensors for enhanced interactions.</p>
+        </section>
+
+        <section id="faq">
+            <h1 data-en="🤖 FAQ" data-cn="🤖 常见问题">🤖 FAQ</h1>
+            <h3 data-en="Why launch on both Solana and Binance at the same time? Why not pick one?" data-cn="为什么同时在Solana和Binance上发布？为什么不选择一个？">Why launch on both Solana and Binance at the same time? Why not pick one?</h3>
+            <p data-en="Solana and Binance are two completely different communities. We believe BinBin (宾宾) has appeal across the spectrum. We wanted to launch in both at once to maximize our community." data-cn="Solana和Binance是两个完全不同的社区。我们相信宾宾对各个领域都有吸引力。我们希望同时在两者上发布，以最大化我们的社区。">Solana and Binance are two completely different communities. We believe <span>BinBin (宾宾)</span> has appeal across the spectrum. We wanted to launch in both at once to maximize our community.</p>
+            <h3 data-en="How do I buy a BinBin (宾宾)?" data-cn="如何购买宾宾？">How do I buy a <span>BinBin (宾宾)</span>?</h3>
+            <p data-en="BinBin (宾宾) will be a platform which anyone can assemble at home. We aim to create a community around BinBin (宾宾) to work together to further the project. Ultimately, we hope to make BinBin (宾宾) available for sale and shipping, but need to evolve the platform. This is all in our roadmap." data-cn="宾宾将是一个任何人都能在家中组装的平台。我们旨在围绕宾宾创建一个社区，共同推进项目。最终，我们希望宾宾能够出售和运输，但需要发展平台。这都在我们的路线图中。"><span>BinBin (宾宾)</span> will be a platform which anyone can assemble at home. We aim to create a community around <span>BinBin (宾宾)</span> to work together to further the project. Ultimately, we hope to make <span>BinBin (宾宾)</span> available for sale and shipping, but need to evolve the platform. This is all in our roadmap.</p>
+            <h3 data-en="How will the funds be used?" data-cn="资金将如何使用？">How will the funds be used?</h3>
+            <p data-en="Funds will go towards design and manufacturing of the BinBin (宾宾). We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the BinBin (宾宾) project and platform, hire engineers and scale the platform." data-cn="资金将用于宾宾的设计和制造。我们最终将生产开源机器人和人形伙伴。目前，我们的主要目标是构建宾宾项目和平台，雇佣工程师并扩展平台。">Funds will go towards design and manufacturing of the <span>BinBin (宾宾)</span>. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the <span>BinBin (宾宾)</span> project and platform, hire engineers and scale the platform.</p>
+            <h3 data-en="How much will BinBin (宾宾) cost?" data-cn="宾宾多少钱？">How much will <span>BinBin (宾宾)</span> cost?</h3>
+            <p data-en="$100 each for the pre-order phase." data-cn="预订阶段每套100美元。">$100 each for the pre-order phase.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p data-en="© 2025 - BinBin (宾宾) - Made with Love by Richard Albritton" data-cn="© 2025 - 宾宾 - Richard Albritton用爱制造">© 2025 - <span>BinBin (宾宾)</span> - Made with Love by Richard Albritton</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelector('.carousel-slides');
+        const slideCount = document.querySelectorAll('.carousel-slide').length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            updateCarousel();
+        });
+
+        document.querySelector('.carousel-button.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateCarousel();
+        });
+
+        // Language Toggle Logic
+        const langEN = document.getElementById('langEN');
+        const langCN = document.getElementById('langCN');
+        const pageTitle = document.getElementById('pageTitle');
+        const headerTitle = document.getElementById('headerTitle');
+        const elements = document.querySelectorAll('[data-en], [data-cn]');
+
+        function setLanguage(lang) {
+            langEN.classList.toggle('active', lang === 'en');
+            langCN.classList.toggle('active', lang === 'cn');
+
+            elements.forEach(element => {
+                const text = lang === 'en' ? element.getAttribute('data-en') : element.getAttribute('data-cn');
+                if (element.tagName === 'A') {
+                    element.textContent = text;
+                } else {
+                    element.innerHTML = text.replace(/BinBin/g, lang === 'en' ? '<span>BinBin (宾宾)</span>' : '<span>宾宾</span>');
+                }
+            });
+
+            pageTitle.textContent = lang === 'en' ? 'BinBin (宾宾) ($BNBN) the Robot' : '宾宾 ($BNBN) 机器人';
+            headerTitle.innerHTML = lang === 'en' ? '<span>BinBin (宾宾)</span> ($BNBN) the Robot' : '<span>宾宾</span> ($BNBN) 机器人';
+        }
+
+        langEN.addEventListener('click', () => setLanguage('en'));
+        langCN.addEventListener('click', () => setLanguage('cn'));
+
+        // Initial setup
+        setLanguage('en');
+
+        // Google Translate Initialization
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'zh-CN,ko,ja,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
