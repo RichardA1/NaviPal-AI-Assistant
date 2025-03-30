@@ -180,7 +180,7 @@
             font-family: 'Bubblegum Sans', cursive;
         }
 
-        h1 span {
+        h1 span, h2 span, h3 span {
             color: var(--highlight-orange);
         }
 
@@ -199,6 +199,13 @@
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #google_translate_element {
+            position: fixed;
+            top: 80px;
+            right: 40px;
+            z-index: 1000;
         }
 
         @media (max-width: 768px) {
@@ -245,6 +252,11 @@
             section {
                 flex: 1 1 100%;
             }
+
+            #google_translate_element {
+                top: 60px;
+                right: 20px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Bubblegum+Sans&display=swap" rel="stylesheet">
@@ -253,7 +265,7 @@
     <header>
         <div style="display: flex; align-items: center; gap: 10px;">
             <img src="https://github.com/rexsaurus/Binbin/blob/main/logo.png?raw=true" alt="BinBin Logo">
-            <h1><span>BinBin</span> ($BNBN) the Robot</h1>
+            <h1><span>BinBin (宾宾)</span> ($BNBN) the Robot</h1>
         </div>
         <nav>
             <a href="#token">Token</a>
@@ -264,6 +276,8 @@
             <a href="#faq">FAQ</a>
         </nav>
     </header>
+
+    <div id="google_translate_element"></div>
 
     <div class="hero-carousel">
         <div class="carousel-slides">
@@ -281,11 +295,11 @@
     </div>
 
     <div class="product-details">
-        <h2>Hey, I'm Richard Albritton, <span>BinBin</span>'s Creator!</h2>
-        <p>Welcome to <span>BinBin</span>, your friendly, open-source, low-cost robot reminder pal! I dreamed up a simple, fun platform for kids, neurodiverse adults, and everyone in between. With your help, we’re building a community to make <span>BinBin</span> a universal, mass-market buddy—powered by our $BNBN memecoin. Join the journey!</p>
-        <h3>🥰 Why You'll Love <span>BinBin</span></h3>
+        <h2>Hey, I'm Richard Albritton, <span>BinBin (宾宾)</span>'s Creator!</h2>
+        <p>Welcome to <span>BinBin (宾宾)</span>, your friendly, open-source, low-cost robot reminder pal! I dreamed up a simple, fun platform for kids, neurodiverse adults, and everyone in between. With your help, we’re building a community to make <span>BinBin (宾宾)</span> a universal, mass-market buddy—powered by our $BNBN memecoin. Join the journey!</p>
+        <h3>🥰 Why You'll Love <span>BinBin (宾宾)</span></h3>
         <ul>
-            <li>💊 Meds? <span>BinBin</span>’s got your back with timely reminders.</li>
+            <li>💊 Meds? <span>BinBin (宾宾)</span>’s got your back with timely reminders.</li>
             <li>🕑 Appointments? Stay on track, always.</li>
             <li>📣 Voice-programmable—tell me what, when, and I’ll handle it with AI smarts.</li>
             <li>🪥 Kids’ routines? Toothbrushing and tasks, sorted!</li>
@@ -302,13 +316,13 @@
 
     <div class="sections-container">
         <section id="token">
-            <h1>Meet <span>BinBin</span>: A Meme for Robo-Friends</h1>
-            <p>Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. <span>BinBin</span> represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet. The $BNBN token has no utility, it's just a fun meme for friends.</p>
+            <h1>Meet <span>BinBin (宾宾)</span>: A Meme for Robo-Friends</h1>
+            <p>Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. <span>BinBin (宾宾)</span> represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet. The $BNBN token has no utility, it's just a fun meme for friends.</p>
             <p>We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. $BNBN coin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!</p>
-            <p>▶️ <span>BinBin</span> Binance Link: [Insert Binance link here]</p>
-            <p>▶️ <span>BinBin</span> Binance Contract address:</p>
+            <p>▶️ <span>BinBin (宾宾)</span> Binance Link: [Insert Binance link here]</p>
+            <p>▶️ <span>BinBin (宾宾)</span> Binance Contract address:</p>
             <p>▶️ Solana Link: [Insert Solana Link here]</p>
-            <p>▶️ <span>BinBin</span> Contract address:</p>
+            <p>▶️ <span>BinBin (宾宾)</span> Contract address:</p>
         </section>
 
         <section id="socials">
@@ -319,30 +333,29 @@
             <p>▶️ Follow Richard on YouTube: <a href="https://www.youtube.com/@RichardAlbritton">YouTube</a></p>
             <p>▶️ Follow Richard on Adafruit: <a href="https://learn.adafruit.com/u/richa1">Adafruit</a></p>
             <p>▶️ Follow Richard on Hackster: <a href="https://www.hackster.io/Richa1">Hackster</a></p>
-            <p>▶️ Follow Richard on GitHub: <a href="https://github.com/RichardA1">GitHub</a></p>
             <p>▶️ Join us on Telegram:</p>
         </section>
 
         <section id="about">
             <h1>🤖 About Richard Albritton</h1>
-            <p>I built <span>BinBin</span> to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance <span>BinBin</span> via launching memecoins and to use the proceeds to build an open-source friendly robot factory.</p>
+            <p>I built <span>BinBin (宾宾)</span> to help my husband remember to take her pills. It worked so well, many people have asked me to keep working on the project and turn it into a platform anyone can use. My vision is to finance <span>BinBin (宾宾)</span> via launching memecoins and to use the proceeds to build an open-source friendly robot factory.</p>
         </section>
 
         <section id="preorder">
             <h1>🤖 Pre-Order</h1>
-            <p><span>BinBin</span> is a DIY robot kit for now, we are taking limited pre-orders for $100 each. If we reach pre-orders of more than 2000, we will go to mass manufacturing and scale <span>BinBin</span> down in size and cost. Expect a 3-6 months turn around, if you want your own <span>BinBin</span> kit, place your pre-order now.</p>
+            <p><span>BinBin (宾宾)</span> is a DIY robot kit for now, we are taking limited pre-orders for $100 each. If we reach pre-orders of more than 2000, we will go to mass manufacturing and scale <span>BinBin (宾宾)</span> down in size and cost. Expect a 3-6 months turn around, if you want your own <span>BinBin (宾宾)</span> kit, place your pre-order now.</p>
         </section>
 
         <section id="roadmap">
             <h1>🤖 Roadmap</h1>
             <ul>
-                <li><span>BinBin</span> v0 & demo</li>
-                <li><span>BinBin</span> Binance Launch <- We are here</li>
-                <li><span>BinBin</span> website, docs and socials</li>
-                <li><span>BinBin</span> Platform v1 (Whitepaper + Design)</li>
-                <li><span>BinBin</span> v1 (More advanced)</li>
-                <li><span>BinBin</span> v2 (Humanoid)</li>
-                <li><span>BinBin</span> robot sale (only for holders)</li>
+                <li><span>BinBin (宾宾)</span> v0 & demo</li>
+                <li><span>BinBin (宾宾)</span> Binance Launch <- We are here</li>
+                <li><span>BinBin (宾宾)</span> website, docs and socials</li>
+                <li><span>BinBin (宾宾)</span> Platform v1 (Whitepaper + Design)</li>
+                <li><span>BinBin (宾宾)</span> v1 (More advanced)</li>
+                <li><span>BinBin (宾宾)</span> v2 (Humanoid)</li>
+                <li><span>BinBin (宾宾)</span> robot sale (only for holders)</li>
             </ul>
             <p>Our ultimate vision is to build our very own happy open source robot factory.</p>
             <h2>🤖 Project Goal</h2>
@@ -352,18 +365,18 @@
         <section id="faq">
             <h1>🤖 FAQ</h1>
             <h3>Why launch on both Solana and Binance at the same time? Why not pick one?</h3>
-            <p>Solana and Binance are two completely different communities. We believe <span>BinBin</span> has appeal across the spectrum. We wanted to launch in both at once to maximize our community.</p>
-            <h3>How do I buy a <span>BinBin</span>?</h3>
-            <p><span>BinBin</span> will be a platform which anyone can assemble at home. We aim to create a community around <span>BinBin</span> to work together to further the project. Ultimately, we hope to make <span>BinBin</span> available for sale and shipping, but need to evolve the platform. This is all in our roadmap.</p>
+            <p>Solana and Binance are two completely different communities. We believe <span>BinBin (宾宾)</span> has appeal across the spectrum. We wanted to launch in both at once to maximize our community.</p>
+            <h3>How do I buy a <span>BinBin (宾宾)</span>?</h3>
+            <p><span>BinBin (宾宾)</span> will be a platform which anyone can assemble at home. We aim to create a community around <span>BinBin (宾宾)</span> to work together to further the project. Ultimately, we hope to make <span>BinBin (宾宾)</span> available for sale and shipping, but need to evolve the platform. This is all in our roadmap.</p>
             <h3>How will the funds be used?</h3>
-            <p>Funds will go towards design and manufacturing of the <span>BinBin</span>. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the <span>BinBin</span> project and platform, hire engineers and scale the platform.</p>
-            <h3>How much will <span>BinBin</span> cost?</h3>
+            <p>Funds will go towards design and manufacturing of the <span>BinBin (宾宾)</span>. We will ultimately be producing open-source droids and humanoid companions. For now, our primary aim is to build the <span>BinBin (宾宾)</span> project and platform, hire engineers and scale the platform.</p>
+            <h3>How much will <span>BinBin (宾宾)</span> cost?</h3>
             <p>$100 each for the pre-order phase.</p>
         </section>
     </div>
 
     <footer>
-        <p>© 2025 - <span>BinBin</span> - Made with Love by Richard Albritton</p>
+        <p>© 2025 - <span>BinBin (宾宾)</span> - Made with Love by Richard Albritton</p>
     </footer>
 
     <script>
@@ -385,5 +398,15 @@
             updateCarousel();
         });
     </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'zh-CN,ko,ja,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
