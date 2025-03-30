@@ -37,6 +37,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            z-index: 1000;
         }
 
         header img {
@@ -70,6 +71,21 @@
 
         nav a:hover {
             color: var(--palatinate-blue-2);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: var(--iris);
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         .language-toggle {
@@ -243,22 +259,41 @@
                 left: 20px;
                 right: 20px;
                 padding: 0.5rem;
-                flex-direction: column;
-                align-items: flex-start;
+                flex-wrap: wrap;
             }
             
             body {
                 padding: 0 20px;
             }
             
-            nav {
-                flex-direction: column;
-                align-items: flex-end;
-                width: 100%;
+            .hamburger {
+                display: block;
             }
-            
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--periwinkle);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 10px 0;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
             nav a {
-                margin: 5px 0;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .language-toggle {
+                margin: 10px 0;
+                justify-content: center;
             }
             
             header h1 {
@@ -287,12 +322,8 @@
                 flex: 1 1 100%;
             }
 
-            .language-toggle {
-                margin-top: 10px;
-            }
-
             #google_translate_element {
-                top: 100px;
+                top: 60px;
                 right: 20px;
             }
         }
@@ -306,15 +337,18 @@
             <h1 id="headerTitle"><span>BinBin (宾宾)</span> ($BNBN) the Robot</h1>
         </div>
         <nav>
-            <a href="#token">Token</a>
-            <a href="#socials">Socials</a>
-            <a href="#about">About</a>
-            <a href="#preorder">Pre-Order</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#faq">FAQ</a>
-            <div class="language-toggle">
-                <button id="langEN" class="active">EN</button>
-                <button id="langCN">CN</button>
+            <button class="hamburger">☰</button>
+            <div class="nav-links">
+                <a href="#token">Token</a>
+                <a href="#socials">Socials</a>
+                <a href="#about">About</a>
+                <a href="#preorder">Pre-Order</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#faq">FAQ</a>
+                <div class="language-toggle">
+                    <button id="langEN" class="active">EN</button>
+                    <button id="langCN">CN</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -438,6 +472,14 @@
         document.querySelector('.carousel-button.next').addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % slideCount;
             updateCarousel();
+        });
+
+        // Hamburger Menu Logic
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
 
         // Language Toggle Logic
