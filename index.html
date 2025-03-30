@@ -13,6 +13,7 @@
             --palatinate-blue-2: #4E37CBff;
             --highlight-orange: #FF6B6B;
             --light-grey: #E0E0E0;
+            --product-bg: #D8E6F2; /* Light blue for product details */
         }
 
         body {
@@ -78,30 +79,23 @@
             margin-right: auto;
         }
 
-        @media (max-width: 768px) {
-            .hero {
-                height: 200px;
-                background-size: contain;
-                background-position: center;
-            }
-            
-            header {
-                left: 20px;
-                right: 20px;
-                padding: 0.5rem;
-            }
-            
-            body {
-                padding: 0 20px;
-            }
-            
-            nav a {
-                margin: 0 10px;
-            }
-            
-            header h1 {
-                font-size: 1.2rem;
-            }
+        .product-details {
+            background: var(--product-bg);
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .product-details ul {
+            padding-left: 20px;
+            margin: 10px 0;
         }
 
         .button-container {
@@ -160,6 +154,45 @@
         section + footer {
             margin-top: -20px;
         }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 200px;
+                background-size: contain;
+                background-position: center;
+            }
+            
+            header {
+                left: 20px;
+                right: 20px;
+                padding: 0.5rem;
+            }
+            
+            body {
+                padding: 0 20px;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+            
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .product-details {
+                padding: 20px;
+                margin: 10px auto;
+            }
+
+            .product-details h2 {
+                font-size: 1.4rem;
+            }
+
+            .product-details p, .product-details ul {
+                font-size: 0.9rem;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Bubblegum+Sans&display=swap" rel="stylesheet">
 </head>
@@ -181,6 +214,18 @@
 
     <div class="hero"></div>
 
+    <div class="product-details">
+        <h2>Hey, I'm Richard Albritton, <span>BinBin</span>'s Creator!</h2>
+        <p>Welcome to <span>BinBin</span>, your friendly, open-source, low-cost robot reminder pal! I dreamed up a simple, fun platform for kids, neurodiverse adults, and everyone in between. With your help, we’re building a community to make <span>BinBin</span> a universal, mass-market buddy—powered by our $BNBN memecoin. Join the journey!</p>
+        <h3>🥰 Why You'll Love <span>BinBin</span></h3>
+        <ul>
+            <li>💊 Meds? <span>BinBin</span>’s got your back with timely reminders.</li>
+            <li>🕑 Appointments? Stay on track, always.</li>
+            <li>📣 Voice-programmable—tell me what, when, and I’ll handle it with AI smarts.</li>
+            <li>🪥 Kids’ routines? Toothbrushing and tasks, sorted!</li>
+        </ul>
+    </div>
+
     <div class="button-container">
         <a href="https://www.youtube.com/watch?v=SLpDSxgNKxc">Watch the Demo</a>
         <a href="#">Buy $BNBN</a>
@@ -191,8 +236,8 @@
 
     <section id="token">
         <h1>Meet <span>BinBin</span>: A Meme for Robo-Friends</h1>
-        <p>Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. <span>BinBin</span> represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet. The $BNBN token has no utility, its just a fun meme for friends.</p>
-        <p>We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. $BNBN coin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!</p>
+        <p>Creating robots takes time, materials, tools, and a lot of love! That’s why we’re doing a simulaunch on Binance and Solana. <span>BinBin</span> represents all the positive energy and excitement of our robot project—like an electric hug, right in your wallet. The $BNBN token has no utility, it's just a fun meme for friends.</p>
+ scur       <p>We’ll be holding 40% of the total supply, selling 20% to fund development, and saving some for the future. $BNBN coin is a fun, meme-driven token with no utility, but it’s a way for you to show your support and become part of this journey!</p>
         
         <p>▶️ <span>BinBin</span> Binance Link: [Insert Binance link here]</p>
         <p>▶️ <span>BinBin</span> Binance Contract address:</p>
@@ -205,7 +250,7 @@
         <p>Make sure to join our community. We are recruiting robot builders, open source contributors, software developers and designers. Or if you just wanna hang out, that's fine too!</p>
         <p>▶️ Follow Richard on X: <a href="https://x.com/RichardAlbrit14">Meet Richard on X</a></p>
         <p>▶️ Follow Richard on LinkedIn: <a href="https://www.linkedin.com/in/richard-albritton-6a69103a/">LinkedIn</a></p>
-        <p>▶️ Follow Richard on LinkedIn: <a href="https://www.youtube.com/@RichardAlbritton">YouTube</a></p>
+        <p>▶️ Follow Richard on YouTube: <a href="https://www.youtube.com/@RichardAlbritton">YouTube</a></p>
         <p>▶️ Follow Richard on Adafruit: <a href="https://learn.adafruit.com/u/richa1">Adafruit</a></p>
         <p>▶️ Follow Richard on Hackster: <a href="https://www.hackster.io/Richa1">Hackster</a></p>
         <p>▶️ Join us on Telegram:</p>
