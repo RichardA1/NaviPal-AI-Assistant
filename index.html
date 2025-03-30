@@ -69,14 +69,51 @@
             color: var(--palatinate-blue-2);
         }
 
-        .hero {
+        .hero-carousel {
             width: 100%;
             max-width: 1200px;
             height: 400px;
-            background: url('https://github.com/rexsaurus/NaviPal/blob/main/navipal.png?raw=true') center/cover no-repeat;
             margin-top: 70px;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .carousel-button:hover {
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .product-details {
@@ -134,9 +171,8 @@
         section {
             padding: 20px;
             background: var(--periwinkle);
-            flex: 1 1 calc(50% - 10px); /* Two per row with gap */
+            flex: 1 1 calc(50% - 10px);
             box-sizing: border-box;
-            margin-bottom: 0; /* Remove bottom margin since gap handles spacing */
         }
 
         h1, h2, h3 {
@@ -166,10 +202,8 @@
         }
 
         @media (max-width: 768px) {
-            .hero {
+            .hero-carousel, .carousel-slide {
                 height: 200px;
-                background-size: contain;
-                background-position: center;
             }
             
             header {
@@ -204,12 +238,12 @@
             }
 
             .sections-container {
-                flex-direction: column; /* Stack vertically on mobile */
+                flex-direction: column;
                 gap: 10px;
             }
 
             section {
-                flex: 1 1 100%; /* Full width on mobile */
+                flex: 1 1 100%;
             }
         }
     </style>
@@ -231,7 +265,20 @@
         </nav>
     </header>
 
-    <div class="hero"></div>
+    <div class="hero-carousel">
+        <div class="carousel-slides">
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/navipal.png?raw=true')"></div>
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/D312A4F3-E740-4C6E-BBA1-35B3FBCC6412_1_105_c.jpeg?raw=true')"></div>
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/E6F6E69D-E8BF-443C-8DE3-07162459EAED_1_105_c.jpeg?raw=true')"></div>
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/FEEBEB14-6065-415B-91D4-6C242A9A79B2_1_105_c.jpeg?raw=true')"></div>
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/980183B1-AF3B-484A-A7EF-953942D5E4D6_1_105_c.jpeg?raw=true')"></div>
+            <div class="carousel-slide" style="background-image: url('https://github.com/rexsaurus/Binbin/blob/main/4284B534-EE4B-4C3D-B343-6C61C412108A_1_105_c.jpeg?raw=true')"></div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
+        </div>
+    </div>
 
     <div class="product-details">
         <h2>Hey, I'm Richard Albritton, <span>BinBin</span>'s Creator!</h2>
@@ -272,6 +319,7 @@
             <p>▶️ Follow Richard on YouTube: <a href="https://www.youtube.com/@RichardAlbritton">YouTube</a></p>
             <p>▶️ Follow Richard on Adafruit: <a href="https://learn.adafruit.com/u/richa1">Adafruit</a></p>
             <p>▶️ Follow Richard on Hackster: <a href="https://www.hackster.io/Richa1">Hackster</a></p>
+            <p>▶️ Follow Richard on GitHub: <a href="https://github.com/RichardA1">GitHub</a></p>
             <p>▶️ Join us on Telegram:</p>
         </section>
 
@@ -317,5 +365,25 @@
     <footer>
         <p>© 2025 - <span>BinBin</span> - Made with Love by Richard Albritton</p>
     </footer>
+
+    <script>
+        const slides = document.querySelector('.carousel-slides');
+        const slideCount = document.querySelectorAll('.carousel-slide').length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            updateCarousel();
+        });
+
+        document.querySelector('.carousel-button.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateCarousel();
+        });
+    </script>
 </body>
 </html>
