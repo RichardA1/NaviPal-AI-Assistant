@@ -11,15 +11,16 @@
             --periwinkle: #BEBAE7ff;
             --iris: #5D44D2ff;
             --palatinate-blue-2: #4E37CBff;
-            --highlight-orange: #FF6B6B; /* Added highlight color */
+            --highlight-orange: #FF6B6B;
+            --light-grey: #E0E0E0; /* Added light grey for gutter */
         }
 
         body {
-            margin: 0 40px; /* Added gutters */
-            padding: 0;
-            font-family: 'Comic Neue', cursive; /* Fun, cute font for body */
+            margin: 0;
+            padding: 0 40px; /* Gutters on left and right */
+            font-family: 'Comic Neue', cursive;
             scroll-behavior: smooth;
-            background-color: var(--periwinkle);
+            background-color: var(--light-grey); /* Gutter color */
             color: var(--black);
             text-align: left;
         }
@@ -27,8 +28,8 @@
         header {
             position: fixed;
             top: 0;
-            left: 40px; /* Match left gutter */
-            right: 40px; /* Match right gutter */
+            left: 40px;
+            right: 40px;
             background: var(--periwinkle);
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -42,14 +43,14 @@
         }
 
         header h1 {
-            font-family: 'Bubblegum Sans', cursive; /* Cute, bold font for title */
+            font-family: 'Bubblegum Sans', cursive;
             margin: 0;
             font-size: 1.5rem;
             color: var(--iris);
         }
 
         header h1 span {
-            color: var(--highlight-orange); /* Highlight color for BinBin */
+            color: var(--highlight-orange);
         }
 
         nav {
@@ -76,7 +77,8 @@
         .button-container {
             padding: 20px;
             background: var(--periwinkle);
-            text-align: center; /* Center align buttons */
+            text-align: center;
+            margin-bottom: 20px; /* Reduced spacing */
         }
 
         .button-container a {
@@ -87,7 +89,7 @@
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            font-family: 'Bubblegum Sans', cursive; /* Fun font for buttons */
+            font-family: 'Bubblegum Sans', cursive;
         }
 
         .button-container a:hover {
@@ -95,18 +97,18 @@
         }
 
         section {
-            padding: 40px;
+            padding: 20px 40px; /* Reduced vertical padding */
             background: var(--periwinkle);
-            /* Removed min-height to wrap content */
+            margin-bottom: 20px; /* Reduced spacing between sections */
         }
 
         h1, h2, h3 {
             color: var(--iris);
-            font-family: 'Bubblegum Sans', cursive; /* Fun font for headings */
+            font-family: 'Bubblegum Sans', cursive;
         }
 
         h1 span {
-            color: var(--highlight-orange); /* Highlight color for BinBin in headings */
+            color: var(--highlight-orange);
         }
 
         ul {
@@ -120,6 +122,14 @@
             text-align: center;
             border-top: 1px solid var(--palatinate-blue);
             font-family: 'Comic Neue', cursive;
+            margin-bottom: 20px; /* Reduced spacing */
+        }
+
+        /* Ensure total spacing between sections doesn't exceed 100px */
+        .button-container + section,
+        section + section,
+        section + footer {
+            margin-top: -20px; /* Offset padding to keep total spacing ~60px */
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Bubblegum+Sans&display=swap" rel="stylesheet">
