@@ -31,7 +31,6 @@ captive_portal:
 
 improv_serial:
 
-
 globals:
   - id: global_brightness
     type: float
@@ -63,6 +62,25 @@ text_sensor:
   - platform: template
     name: Responce Text
     id: tts
+
+script:
+  - id: check_follow_up
+    mode: restart
+    then:
+      - lambda: |-
+          std::string response = id(tts).state.c_str();
+          if (!response.empty() && response.back() == '?') {
+            ESP_LOGD("followup", "TTS ends in a question. Starting voice assistant.");
+            id(start_va).execute();
+          } else {
+            ESP_LOGD("followup", "No follow-up needed.");
+          }
+
+  - id: start_va
+    mode: restart
+    then:
+      - delay: 1s
+      - voice_assistant.start
 
  # Audio and Voice Assistant Config          
 i2s_audio:
@@ -96,6 +114,13 @@ voice_assistant:
   noise_suppression_level: 1
   auto_gain: 10dBFS
   volume_multiplier: 2.0
+  on_start:
+    - delay: 2s
+    - homeassistant.service:
+        service: tts.google_translate_say
+        data:
+          entity_id: media_player.media_out
+          message: "Hello, I am ready."
   on_listening: 
     - light.turn_on:
         id: led
@@ -184,13 +209,10 @@ media_player:
     volume_min: 0.4
     on_announcement:
        - light.turn_on:
-          id: led
-          blue: 75%
-          red: 100%
-          green: 0%
-          brightness: !lambda 'return id(global_brightness);'
-          effect: talking
+           id: led
+           effect: "Talking Random"
     on_idle:
+         - script.execute: check_follow_up
          - light.turn_on:
             id: led
             blue: 100%
@@ -227,3 +249,31 @@ light:
           name: Rainbow Effect With Custom Values
           speed: 40
           width: 50
+      - lambda:
+          name: "Talking Random"
+          update_interval: 25ms
+          lambda: |-
+            static int counter = 0;
+            static int pause_counter = 0;
+            static int pause_interval = 0;
+
+            if (pause_counter > 0) {
+              pause_counter--;
+              return;
+            }
+
+            if (counter++ > 3) {
+              counter = 0;
+
+              // Occasionally insert a random pause
+              if (random_uint32() % 10 == 0) {  // ~10% chance
+                pause_counter = 20 + (random_uint32() % 20);  // pause for 500ms–1s
+                return;
+              }
+
+              float brightness = 0.1 + (random_float() * 0.5);
+              auto call = id(led).make_call();
+              call.set_brightness(brightness);
+              call.set_rgb(brightness, 0.0, brightness);  // optional: greenish
+              call.perform();
+            }
