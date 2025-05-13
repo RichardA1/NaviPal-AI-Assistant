@@ -1,27 +1,16 @@
 esphome:
   name: navipals-box
   friendly_name: NaviPals Box
-  platformio_options:
-    board_build.flash_mode: dio
-  on_boot:
-    - light.turn_on:
-        id: led
-        blue: 100%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
-        effect: fast pulse
 
 esp32:
   board: esp32-s3-devkitc-1
   framework:
     type: esp-idf
-   
-psram:
-  mode: octal # Please change this to quad for N8R2 and octal for N16R8
-  speed: 80MHz
 
+# Enable logging
 logger:
 
+# Enable Home Assistant API
 api:
   encryption:
     key: !secret navipal_key
@@ -42,15 +31,30 @@ captive_portal:
 
 improv_serial:
 
+
+globals:
+  - id: global_brightness
+    type: float
+    restore_value: true
+    initial_value: '0.5'  # 50% brightness
+
 number:
   - platform: template
-    name: "LED brightness"
+    name: "LED Brightness"
+    id: brightness_control
+    min_value: 0
+    max_value: 1
+    step: 0.05
     optimistic: true
-    min_value: 10
-    max_value: 100
-    step: 1
-    id: led_brightness
+    initial_value: 0.5
     restore_value: True
+    set_action:
+      - globals.set:
+          id: global_brightness
+          value: !lambda 'return x;'
+      - light.control:
+          id: led
+          brightness: !lambda 'return id(global_brightness);'
 
 text_sensor:
   - platform: template
@@ -91,29 +95,18 @@ microphone:
 
 voice_assistant:
   microphone: echo_microphone
-  conversation_timeout: 20s
-  on_start:
-    - light.turn_on:
-        id: led
-        blue: 100%
-        red: 0%
-        green: 0%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
-        effect: none
+  media_player: media_out
+  noise_suppression_level: 1
+  auto_gain: 10dBFS
+  volume_multiplier: 2.0
   on_listening: 
     - light.turn_on:
         id: led
         blue: 0%
         red: 0%
         green: 50%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
+        brightness: !lambda 'return id(global_brightness);'
         effect: Rainbow Effect With Custom Values
-  on_intent_start:
-    then:
-      - media_player.toggle:
-          id: media_out
   on_stt_end: 
     - text_sensor.template.publish:
         id: stt
@@ -122,45 +115,15 @@ voice_assistant:
     - text_sensor.template.publish:
         id: tts
         state: !lambda 'return x;'
-    - light.turn_on:
-        id: led
-        blue: 75%
-        red: 0%
-        green: 100%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
-        effect: pulse
   on_tts_end:
     - media_player.play_media: !lambda return x;
-    - light.turn_on:
-        id: led
-        blue: 100%
-        red: 50%
-        green: 0%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
-        effect: talking
-  on_end:
-    - delay: 1s
-    - wait_until:
-        not:
-          media_player.is_playing: media_out
-    - light.turn_on:
-        id: led
-        blue: 100%
-        red: 0%
-        green: 0%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
-        effect: none
   on_error:
     - light.turn_on:
         id: led
         blue: 0%
         red: 100%
         green: 0%
-        brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
+        brightness: !lambda 'return id(global_brightness);'
         effect: none
     - delay: 1s
     - light.turn_off: led
@@ -201,23 +164,34 @@ button:
           id: media_out
       - delay: 5ms
       - voice_assistant.start:
-        
-media_player:
+
+speaker:
   - platform: i2s_audio
     i2s_audio_id: i2s_speaker
+    id: s3_speaker
+    i2s_dout_pin: GPIO15 #  DIN Pin of the MAX98357A Audio
+    dac_type: external
+    bits_per_sample: 32bit
+    channel: right
+    buffer_duration: 60ms
+
+media_player:
+  - platform: speaker
     id: media_out
     name: Media Player
-    dac_type: external
-    i2s_dout_pin: GPIO15   #  DIN Pin of the MAX98357A Audio
-    mode: mono
+    announcement_pipeline:
+      speaker: s3_speaker
+      format: WAV
+    codec_support_enabled: false
+    buffer_size: 6000
+    volume_min: 0.4
     on_announcement:
        - light.turn_on:
           id: led
           blue: 75%
           red: 100%
           green: 0%
-          brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
+          brightness: !lambda 'return id(global_brightness);'
           effect: talking
     on_idle:
          - light.turn_on:
@@ -225,8 +199,7 @@ media_player:
             blue: 100%
             red: 0%
             green: 0%
-            brightness:  !lambda |-
-                      return 1*(id(led_brightness).state * 0.01);
+            brightness: !lambda 'return id(global_brightness);'
             effect: none
 
 light:
@@ -238,7 +211,6 @@ light:
     chipset: ws2812
     num_leds: 16
     rgb_order: grb
-    rmt_channel: 1
     on_turn_on:
       - light.turn_on:
           id: led
