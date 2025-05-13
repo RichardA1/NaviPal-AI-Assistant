@@ -63,9 +63,6 @@ text_sensor:
   - platform: template
     name: Responce Text
     id: tts
-  - platform: template
-    name: Brite
-    id: brit
 
  # Audio and Voice Assistant Config          
 i2s_audio:
